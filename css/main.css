@@ -1,0 +1,558 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sneaky
+{
+  display:none;
+}
+
+body
+{
+  background-color: #000003;
+  font-family: 'Oswald', sans-serif;
+  overflow:hidden;
+  margin:0;
+}
+
+a
+{
+  color: #FFFFF3;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+}
+.module
+  {
+    margin-top: 3rem;
+    position: fixed;
+    height: 100%;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+  }
+#module
+{
+    background-image: url('../images/land.png');
+      z-index: -3;
+      background-size: cover;
+}
+#module2
+{
+    background-image: url('../images/rock.png');
+      z-index: -1;
+      background-size: cover;
+}
+#module3
+{
+    background-image: url('../images/deer.png');
+      z-index: -2;
+      background-size: cover;
+}
+
+#moveThis
+{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top:0px;
+    margin-top: 3rem;
+}
+
+#Page1
+{
+height: 100%;
+}
+
+#mainNav
+{
+  text-align: center;
+  padding-top: 1rem;
+}
+#mainNav ul
+{
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  height: 100px;
+}
+.grx
+{
+  display: inline;
+  color: #FFFFF3;
+  position: absolute;
+  width:100px;
+  height:24px;
+  text-align:center;
+}
+.nButton
+{
+    display: inline-flex;
+    width: 60px;
+    height: 30px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.hit
+{
+cursor:pointer;
+position:absolute;
+width:100px;
+height:100px;
+border-radius:100px;
+background:#f1f1f1;
+opacity:0;
+transform: translateY(-40%);
+pointer-events: inherit;
+}
+
+
+@media screen and (max-width: 576px) {
+  #mainNav
+  {
+    display: none;
+  }
+}
+#ThisIsMe
+{
+    top: 13%;
+    cursor:default;
+    position: relative;
+    z-index: -5;
+}
+
+#TitleName
+{
+  color: #FFFFF3;
+  text-align:left;
+  font-weight:normal;
+  font-size: 8rem;
+}
+
+#Page1_P
+{
+  color: #FFFFF3;
+  text-align: right;
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-weight:lighter;
+}
+
+#nextBarP1
+{
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+overflow: hidden;
+z-index: 1003;
+}
+
+#P1black
+{
+  height:0px;
+  background-color: #000003;
+  position: relative;
+}
+#P1circle
+{
+  width: 62px;
+  height:46px;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -31px;
+  margin-top: -23px;
+  z-index: 1004;
+}
+
+#P1square
+{
+  width: 42px;
+  height:25px;
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -21px;
+  z-index: 1003;
+}
+
+#P1triangle
+{
+  width: 42px;
+  height:25px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -21px;
+}
+
+#P1arrow
+{
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #000003;
+  border-bottom: 20px solid transparent;
+
+}
+
+#P1arrow2
+{
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #FFFFF3;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  z-index: 1003;
+  left: 0;
+  top:0;
+
+
+}
+/*PAGE 2 ABOUT ME*/
+
+#Page2
+{
+background-image: url('../images/landscape.webp');
+z-index: 1;
+position: relative;
+top:0;
+background-size: cover;
+}
+#Page2Black
+{
+background-color: #000003;
+position: absolute;
+bottom: 0;
+z-index: 2;
+height: 100%;
+width: 100%;
+}
+
+#colorWrap{
+background-color: #fff7e8;
+position: relative;
+z-index: 1;
+overflow: hidden;
+box-shadow: 0px -10px 8px #EDE7E7;
+}
+#aboutArtWrap
+{
+  -webkit-mask-image: url('../images/aboutmeTemp.png');
+  mask-image: url('../images/aboutmeTemp.png');
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  position: relative;
+  bottom: 0;
+  z-index: -1;
+}
+#aboutMe
+{
+  color: #FFFFF3;
+  text-align: center;
+  padding-top: 25%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media screen and (min-width: 900px) {
+  #aboutMe
+  {
+      padding-top: 15%;
+      padding-left: 15%;
+      padding-right: 15%;
+  }
+}
+
+#aboutTitle
+{
+  font-size: 50px;
+}
+
+/*PAGE 3 GALLERY*/
+
+#Page3
+{
+  background-color: black;
+}
+
+#projects
+{
+  height: 100vh;
+}
+
+#galleryWrap
+{
+  overflow: hidden;
+  position: relative;
+}
+
+#galleryWrap * {
+  box-sizing: border-box;
+}
+
+#gallery
+{
+  transform-style: preserve-3d;
+  margin:0 auto;
+}
+/* slides */
+.mySlides
+{
+  opacity: 0;
+    position: absolute;
+    top:0;
+    height: 100vh;
+    margin: auto;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
+    overflow: hidden;
+}
+.mySlides.initial,
+.mySlides.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+#buttonWrap
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+/* Next & previous buttons */
+#prevB, #nextB {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  z-index: 1000;
+
+}
+.mySlides.prev,
+.mySlides.next {
+  z-index: 800;
+}
+.mySlides.prev {
+  transform: translateX(-100%); /* Move 'prev' item to the left */
+}
+.mySlides.next {
+  transform: translateX(100%); /* Move 'next' item to the right */
+}
+/* Position the "next button" to the right */
+#nextB {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prevB:hover, #nextB:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+.text {
+  width:80%;
+  padding-left:1rem;
+  padding-right:1rem;
+}
+}
+.firstSlide
+{
+  top:20%;
+  left:15%;
+  text-align: left;
+}
+.secondSlide
+{
+  bottom:20%;
+  right:10%;
+  text-align: right;
+}
+.thirdSlide
+{
+  bottom:20%;
+  left:25%;
+  text-align: left;
+}
+.fourthSlide
+{
+  top:30%;
+  right:20%;
+  text-align: right;
+}
+/*CSS Selectors*/
+#slideShowBarWrap
+{
+  position: absolute;
+  width: 100%;
+  background-color: grey;
+  opacity: 1;
+  z-index: 1000;
+}
+
+#slideShowBar
+{
+  background-color: black;
+  opacity: 0.7;
+  height: 0.6em;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+#slideInnerBar
+{
+  background-color: #2e2f30;
+  width: 0;
+  height: 100%;
+}
+/*PAGE 4 CONTACT*/
+
+#Page4
+{
+  background-color: #FFFFF3;
+}
+
+#contact
+{
+  position: relative;
+  top:10%;
+}
+
+#contactTitle
+{
+ margin-bottom: 2rem;
+ margin-top: 0;
+ text-align: left;
+ padding: 0;
+ margin-left: 1rem;
+}
+@media (min-width: 800px) {
+#contactContainer
+{
+    width:800px;
+}
+.copyWrap
+{
+width: 800px;
+left:50%;
+margin-left:-400px;
+}
+}
+.contactButton
+{
+background-color: lightgrey;
+border-style: solid;
+color: black;
+padding-top: 10px;
+padding-bottom: 1rem;
+padding-left: 1rem;
+width: inherit;
+}
+.cSend
+{
+  background-color: lightgrey;
+  border-style: solid;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+.cMessage
+{
+  resize: vertical;
+  height: 30vh;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+input:focus
+{
+  background-color: darkgrey;
+  outline: none;
+}
+
+.contactWraps
+{
+  margin-bottom: 1rem;
+  margin: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.loadBar
+{
+  background-color: magenta;
+  height: 5px;
+  width: 0px;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  bottom: 5px;
+}
+
+
+#nameWrap:focus-within > .loadBar
+{
+  width: 100%;
+}
+#emailWrap:focus-within > .loadBar
+{
+  width: 100%;
+}
+#SubjectWrap:focus-within > .loadBar
+{
+  width: 50%;
+}
+#messageWrap:focus-within > .loadBar
+{
+  width: 100%;
+}
+@media screen and (max-width: 576px) {
+  #SubjectWrap:focus-within > .loadBar
+  {
+    width: 100%;
+  }
+  .cSend
+  {
+    width: 50vw;
+    margin-left: 25vw;
+  }
+}
+
+.copyWrap
+{
+  position: relative;
+  bottom:-97vh;
+}
+
+#copyright
+{
+  text-align: right;
+  color: darkgrey;
+}
