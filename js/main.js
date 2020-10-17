@@ -19,9 +19,9 @@
   var contButton = navButtons[3];
   //Carousel
   var slides = document.querySelectorAll(".mySlides");
-    totalItems = slides.length,
-    slide = 0,
-    moving = true;
+  var totalItems = slides.length;
+  var slide = 0;
+  var moving = true;
   var next = document.querySelector("#nextB");
   var prev = document.querySelector("#prevB");
   var slideClassName = "mySlides";
@@ -30,16 +30,20 @@
   var innerBar = document.querySelector("#slideInnerBar");
   var galleryBox = document.querySelector("#projects");
   var autoGallery = true;
-  var button = document.getElementsByClassName("button");
+  //var button = document.getElementsByClassName("button");
+  var pH;
+  var p3;
+  var p4;
+  var nPS;
   //FUNCTIONS
   //HEIGHT READER
-  function heightReader(a,b,c)
+  function heightReader()
   {
-    console.log("triggeredstart");
     pH = window.innerHeight;
     p3 = pH * 2;
     p4 = pH * 3;
     nPS = window.pageYOffset;
+    console.log(pH);
   }
   //PAGE RESIZE
 function autoResizeDiv()
@@ -51,9 +55,10 @@ function autoResizeDiv()
     //switchArt.style.width = window.innerWidth+'px';
     //console.log(window.innerHeight);
     window.slideBarWidth = window.innerWidth / totalItems;
-    slideShowBar.style.width = slideBarWidth;
+    slideBar.style.width = slideBarWidth+"px";
     console.log("Resized");
     console.log(slideBarWidth);
+    console.log(slideBar);
 }
 
 //SCROLL FUNCTIONALITY
@@ -109,10 +114,10 @@ function nextPage()
     TweenMax.to(altArrow,0.3, {opacity:1, delay:2.4});
     TweenMax.to(blackBar, 0, {height:pH });
     TweenMax.from(blackBar, 0.5, {marginBottom:-pH,});
-    blackBarAni.to(regArrow,0.3, {opacity:0 ,onStart: function(){animationState = true;}, onStart: function(){allowBar = true;}});
+    blackBarAni.to(regArrow,0.3, {opacity:0 ,onStart: function(){animationState = true; allowBar = true;}});
     blackBarAni.to(blackBar, 1.6, {marginBottom:pH,});
     blackBarAni.to(blackBar, 0, {height:0, marginBottom:0});
-    blackBarAni.to(regArrow,0.3, {opacity:1 ,onComplete: function(){animationState = false;}, onComplete: function(){allowBar = false;}});
+    blackBarAni.to(regArrow,0.3, {opacity:1 ,onComplete: function(){animationState = false; allowBar = false;}});
   }
   //PREVIOUS PAGE
   function prevPage()
@@ -214,10 +219,10 @@ function goAbout()
   TweenMax.to(altArrow,0.3, {opacity:1, delay:2.4});
   TweenMax.to(blackBar, 0, {height:pH });
   TweenMax.from(blackBar, 0.5, {marginBottom:-pH,});
-  blackBarAni.to(regArrow,0.3, {opacity:0 ,onStart: function(){animationState = true;}, onStart: function(){allowBar = true;}});
+  blackBarAni.to(regArrow,0.3, {opacity:0 ,onStart: function(){animationState = true; allowBar = true;}});
   blackBarAni.to(blackBar, 1.6, {marginBottom:pH,});
   blackBarAni.to(blackBar, 0, {height:0, marginBottom:0});
-  blackBarAni.to(regArrow,0.3, {opacity:1 ,onComplete: function(){animationState = false;}, onComplete: function(){allowBar = false;}});
+  blackBarAni.to(regArrow,0.3, {opacity:1 ,onComplete: function(){animationState = false; allowBar = false;}});
 }
 
 function goProj()
@@ -230,7 +235,7 @@ function goCont()
 {
   heightReader();
   TweenMax.to(window, 1.5, {scrollTo:p4, onStart: function(){animationState = true;},onComplete: function(){animationState = false;}});
-  arrowChange()
+  arrowChange();
 }
 
 //Carousel
@@ -251,12 +256,12 @@ function moveNext() {
     if (slide === (totalItems - 1)) {
       slide = 0;
     console.log("Reset Slide");
-    TweenMax.to(slideShowBar, 0.5, {x:0});
+    TweenMax.to(slideBar, 0.5, {x:0+"%"});
     } else {
       slide++;
       console.log("Next Slide");
       //Move slide bar
-      TweenMax.to(slideShowBar, 0.5, {x:"+=" + slideBarWidth});
+      TweenMax.to(slideBar, 0.5, {x:"+=" + 100+"%"});
     }
     // Move carousel to updated slide
     moveCarouselTo(slide);
@@ -270,10 +275,10 @@ function movePrev() {
     // If it's the first slide, set as the last slide, else -1
     if (slide === 0) {
       slide = (totalItems - 1);
-      TweenMax.to(slideShowBar, 0.5, {x:slideBarWidth * 3});
+      TweenMax.to(slideBar, 0.5, {x:300+"%"});
     } else {
       slide--;
-      TweenMax.to(slideShowBar, 0.5, {x:"-=" + slideBarWidth});
+      TweenMax.to(slideBar, 0.5, {x:"-=" + 100+"%"});
     }
 
     // Move carousel to updated slide
@@ -287,7 +292,7 @@ function disableInteraction() {
   moving = true;
   // setTimeout runs its function once after the given time
   setTimeout(function(){
-    moving = false
+    moving = false;
   }, 500);
 }
 
@@ -350,7 +355,7 @@ function innerBarSlide()
 }
 function autoPlay() {
 
-  if (autoGallery == true) {
+  if (autoGallery === true) {
   console.log("Auto Play is On");
   innerBarSlide();
   moveNext();
@@ -373,7 +378,7 @@ var allowFrame = false;
 mover.addEventListener("mousemove", moveScene, false);
 setInterval(function(){ allowFrame = true;}, 33);
 function moveScene(e) {
-  if (allowFrame == true) {
+  if (allowFrame === true) {
   //console.log(e);
   TweenMax.to(artA, 0.3, {backgroundPositionX: -e.offsetX / 30 +10 +"px", ease:Linear.easeNone});
   TweenMax.to(artA, 0.3, {backgroundPositionY: -e.offsetY / 30 +10 +"px", ease:Linear.easeNone});

@@ -237,23 +237,17 @@ width: 100%;
 }
 
 #colorWrap{
-background-color: #fff7e8;
+background-color: #000003;
 position: relative;
 z-index: 1;
 overflow: hidden;
 box-shadow: 0px -10px 8px #EDE7E7;
 }
-#aboutArtWrap
+#aboutArt
 {
-  -webkit-mask-image: url('../images/aboutmeTemp.png');
-  mask-image: url('../images/aboutmeTemp.png');
-  -webkit-mask-position: center center;
-  mask-position: center center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  position: relative;
-  bottom: 0;
-  z-index: -1;
+position: absolute;
+margin: 0 auto;
+padding: 0;
 }
 #aboutMe
 {
@@ -418,7 +412,6 @@ box-shadow: 0px -10px 8px #EDE7E7;
   background-color: black;
   opacity: 0.7;
   height: 0.6em;
-  width: 100%;
   position: absolute;
   bottom: 0;
 }
@@ -553,6 +546,7 @@ input:focus
 
 #copyright
 {
-  text-align: right;
+  text-align: left;
   color: darkgrey;
+  letter-spacing: 0.1em;
 }
