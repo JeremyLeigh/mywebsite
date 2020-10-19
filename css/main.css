@@ -110,7 +110,7 @@ pointer-events: inherit;
 }
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 636px) {
   #mainNav
   {
     display: none;
