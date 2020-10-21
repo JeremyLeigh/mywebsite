@@ -10,6 +10,10 @@
   display:none;
 }
 
+p, textarea, input
+{
+font-family: 'Open Sans', sans-serif;
+}
 body
 {
   background-color: #000003;
