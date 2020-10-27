@@ -451,25 +451,18 @@ width: auto;
   background-color: #FFFFF3;
 }
 
-#contact
+#contactContainer
 {
-  position: relative;
-  top:10%;
+  top:10vh;
 }
-
 #contactTitle
 {
  margin-bottom: 2rem;
  margin-top: 0;
  text-align: left;
- padding: 0;
- margin-left: 1rem;
+ font-size: 3rem;
 }
 @media (min-width: 800px) {
-#contactContainer
-{
-    width:800px;
-}
 .copyWrap
 {
 width: 800px;
@@ -481,7 +474,7 @@ margin-left:-400px;
 {
 background-color: lightgrey;
 border: none;
-color: black;
+color: #787878;
 padding-top: 10px;
 padding-bottom: 1rem;
 padding-left: 1rem;
@@ -497,11 +490,34 @@ caret-color: #a8204d;
   padding-bottom: 1rem;
   padding-left: 1rem;
 }
+.cSend:hover {
+  background-color: #a8204d;
+  transition: background-color 0.8s;
+
+}
+/* Button style */
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 12px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #2196f3;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+}
+
 .cMessage
 {
   resize: vertical;
-  height: 30vh;
+  height: 20vh;
 }
+::placeholder{
+  color:#787878;
+}
+
 input:focus::placeholder {
   color: transparent;
 }
@@ -511,16 +527,12 @@ textarea:focus::placeholder {
 
 input:focus
 {
-  background-color: darkgrey;
   outline: none;
 }
 
 .contactWraps
 {
-  margin-bottom: 1rem;
-  margin: 1rem;
-  width: 100%;
-  height: 100%;
+  margin: 5px;
 }
 
 .loadBar
@@ -534,32 +546,24 @@ input:focus
 }
 
 
-#nameWrap:focus-within > .loadBar
+.contactWraps:focus-within > .loadBar
 {
   width: 100%;
 }
-#emailWrap:focus-within > .loadBar
+
+.cSend:hover
 {
-  width: 100%;
+  color:#FFFFF3;
 }
-#SubjectWrap:focus-within > .loadBar
-{
-  width: 50%;
-}
-#messageWrap:focus-within > .loadBar
-{
-  width: 100%;
-}
-@media screen and (max-width: 576px) {
-  #SubjectWrap:focus-within > .loadBar
-  {
-    width: 100%;
-  }
-  .cSend
-  {
-    width: 50vw;
-    margin-left: 25vw;
-  }
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #FFFFF3;
+  -webkit-box-shadow: 3px 3px 3px 5000px #a8204d inset;
+  transition: background-color 5000s ease-in-out 0s;
+  opacity: 0.8;
 }
 
 .copyWrap
@@ -567,10 +571,24 @@ input:focus
   position: relative;
   bottom:-97vh;
 }
+#contactInfo
+{
+  font-size: 1rem;
+  padding-left: 5px;
+}
 
 #copyright
 {
   text-align: left;
   color: darkgrey;
+}
+#footer
+{
+  height: 20vh;
+  background-color: #000003;
+}
 
+#map
+{
+  height:80vh;
 }

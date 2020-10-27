@@ -48,22 +48,23 @@
       <nav id="mainNav">
 
           <ul id="navList">
-              <div class="nButton"><li class="grx" id="home"><a class="col-4 button">Home</a></li></div>
-              <div class="nButton"><li class="grx" id="about"><a class="col-4 button">About</a></li></div>
-              <div class="nButton"><li class="grx" id="proj"><a class="col-4 button">Projects</a></li></div>
-              <div class="nButton"><li class="grx" id="cont"><a class="col-4 button">Contact</a></li></div>
+              <li class="nButton"><div class="grx" id="home"><a class="col-4 button">Home</a></div></li>
+              <li class="nButton"><div class="grx" id="about"><a class="col-4 button">About</a></div></li>
+              <li class="nButton"><div class="grx" id="proj"><a class="col-4 button">Projects</a></div></li>
+              <li class="nButton"><div class="grx" id="cont"><a class="col-4 button">Contact</a></div></li>
           </ul>
 
       </nav>
     </section>
     <section id="ThisIsMe" class="container-sm">
-      <h1 class="sneaky">This Is Me</h1>
+      <h2 class="sneaky">This Is Me</h2>
       <div class="row justify-content-start">
-      <h1 id="TitleName" class="col-8">JEREMY LEIGH</h1>
+      <h2 id="TitleName" class="col-8">JEREMY LEIGH</h2>
       <p id="Page1_P" class="col-2">DESIGN<br>+WEB</p>
       </div>
     </section>
     <section id="nextBarP1">
+      <h2 class="sneaky">Navigation Arrow</h2>
       <div id="P1circle">
 
       </div>
@@ -81,7 +82,7 @@
 <div id="colorWrap">
 
 <div id="Page2" class="resizePage">
-<img id="aboutArt" src="images/aboutMe2.png" alt="About Me"></img>
+<img id="aboutArt" src="images/aboutMe2.png" alt="About Me">
 <div id="Page2Black"></div>
   <section id="aboutMe">
     <h2 class="sneaky">About Me</h2>
@@ -149,13 +150,12 @@ Fusce scelerisque pellentesque ligula, sit amet rhoncus risus mattis ut. Fusce u
 </div>
 
 <div id="Page4" class="resizePage">
-  <div class="row copyWrap">
-    <p id="copyright" class="col-sm-4 offset-sm-8">	&#169; Jeremy Leigh 2020</p>
-  </div>
-    <section id="contact">
+    <section id="contact" class="container-fluid">
         <h2 class="sneaky">Contact</h2>
-        <div id="contactContainer" class="container">
+        <div class="row">
+        <div id="contactContainer" class="col-lg-5 offset-lg-2">
           <h2 id="contactTitle">Contact Me</h2>
+          <p id="contactInfo">I am interested in freelance opportunities - especially ambitious and creative projects. However, if you have another request or question, don't hesitate to contact me using the form below.</p>
           <form action="contactMe.php" autocomplete="off">
             <div class="row">
             <div id="nameWrap" class="col-sm contactWraps">
@@ -163,37 +163,43 @@ Fusce scelerisque pellentesque ligula, sit amet rhoncus risus mattis ut. Fusce u
             <div class="loadBar"></div>
             </div>
             <div id="emailWrap" class="col-sm contactWraps">
-            <input type="email" class="cEmail contactButton col-sm" name="contactemail" placeholder="Email">
+            <input type="email" class="cEmail contactButton" name="contactemail" placeholder="Email">
             <div class="loadBar"></div>
             </div>
             </div>
             <div class="row">
             <div id="SubjectWrap" class="col-sm contactWraps">
-            <input type="text" class="cSubject contactButton col-sm-6" name="contactsubject" placeholder="Subject">
+            <input type="text" class="cSubject contactButton col-sm-12" name="contactsubject" placeholder="Subject">
             <div class="loadBar"></div>
             </div>
             </div>
             <div class="row">
             <div id="messageWrap" class="col-sm contactWraps">
-            <textarea class="cMessage contactButton container" name="contactmessage" placeholder="Message"></textarea>
+            <textarea class="cMessage contactButton col-sm-12" name="contactmessage" placeholder="Message"></textarea>
               <div class="loadBar"></div>
             </div>
             </div>
             <input type="text" class="sneaky">
             <div class="row">
-            <input type="submit" class="cSend offset-sm-4 col-sm-4" name="contactsubmit" value="SEND">
+            <input type="submit" class="cSend offset-4 col-4" name="contactsubmit" value="SEND">
           </div>
           </form>
         </div>
+        <div id="map" class="col-lg-5"></div>
+        </div>
     </section>
+    <footer id="footer" class="container-fluid">
+      <h2 class="sneaky">Footer</h2>
+      <p id="copyright" class="col-sm-4 offset-sm-8">	&#169; Jeremy Leigh 2020</p>
+    </footer>
 </div>
 
-<footer id="footer">
-  <h2 class="sneaky">Footer</h2>
-</footer>
 <script src="js/greensock/minified/TweenMax.min.js"></script>
 <script src="js/greensock/minified/plugins/ScrollToPlugin.min.js"></script>
 <script src="js/magButtons.js"></script>
+<script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3KgkfPrJyaNk8BPDicCjIb7oHevrKreU&callback=initMap">
+</script>
 <script src="js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

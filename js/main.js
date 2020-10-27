@@ -402,6 +402,15 @@ function navScene(pos){
   TweenMax.to(artC, 0.4, {backgroundPositionX: pos +"px", ease:Linear.easeNone});
 }
 mover.addEventListener("mouseout", resetScene, false);
+
+function initMap(){
+  console.log("Map initialized");
+  var options = {
+    zoom:8,
+    center:{lat:42.9849,lng:-81.2453}
+  };
+  var map = new google.maps.Map(document.getElementById('map'), options);
+}
   // EVENT LISTENERS
 window.onresize = autoResizeDiv;
 autoResizeDiv();
