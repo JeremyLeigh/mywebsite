@@ -580,7 +580,7 @@ input:-webkit-autofill:focus {
 #copyright
 {
   text-align: left;
-  color: darkgrey;
+  color: #FFFFF3;
 }
 #footer
 {
@@ -591,4 +591,17 @@ input:-webkit-autofill:focus {
 #map
 {
   height:80vh;
+}
+
+.socIcon
+{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 3rem;
+}
+
+#socials
+{
+  margin-top: 2rem;
 }
