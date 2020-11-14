@@ -603,5 +603,11 @@ input:-webkit-autofill:focus {
 
 #socials
 {
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+#socials li
+{
+      cursor: pointer;
+      margin-top: 1rem;
 }
