@@ -56,9 +56,9 @@ function autoResizeDiv()
     //console.log(window.innerHeight);
     window.slideBarWidth = window.innerWidth / totalItems;
     slideBar.style.width = slideBarWidth+"px";
-    console.log("Resized");
-    console.log(slideBarWidth);
-    console.log(slideBar);
+    //console.log("Resized");
+    //console.log(slideBarWidth);
+    //console.log(slideBar);
 }
 
 //SCROLL FUNCTIONALITY
@@ -69,11 +69,11 @@ function scrollFunction(e)
 //  console.log(scrollValue);
   if (scrollValue > 0){
     nextPage();
-    console.log('going down');
+    //console.log('going down');
   }
   else {
     prevPage();
-    console.log('going up');
+    //console.log('going up');
   }
 }
   //NEXT PAGE
@@ -143,7 +143,7 @@ function nextPage()
   //BUTTON ANIMATE
 function arrowAnimate()
 {
-    console.log("In");
+    //console.log("In");
   heightReader();
   if (nPS > p3){
     TweenMax.to(blackBar, 0.25, {height: 55});
@@ -198,7 +198,7 @@ function arrowReturn()
 }
 function arrowChange()
 {
-  TweenMax.to(regArrow, 0.25, {borderBottomColor:'#000003', borderTopColor:'transparent'});
+  TweenMax.to(regArrow, 0.25, {borderBottomColor:'#FFFFF3', borderTopColor:'transparent'});
   TweenMax.to(altArrow, 0.25, {borderBottomColor:'#FFFFF3', borderTopColor:'transparent'});
 }
 
@@ -251,7 +251,7 @@ function setInitialClasses() {
 function moveNext() {
   // Check
   if (!moving) {
-    console.log("Next and Not Moving");
+    //console.log("Next and Not Moving");
     // If it's the last slide, reset to 0, else +1
     if (slide === (totalItems - 1)) {
       slide = 0;
@@ -271,7 +271,7 @@ function moveNext() {
 function movePrev() {
   // Check
   if (!moving) {
-    console.log("Previous and Not Moving");
+    //console.log("Previous and Not Moving");
     // If it's the first slide, set as the last slide, else -1
     if (slide === 0) {
       slide = (totalItems - 1);
@@ -303,7 +303,7 @@ function moveCarouselTo(slide) {
   if(!moving) {
     // temporarily disable interactivity
     disableInteraction();
-    console.log("Moving To Next Slide");
+    //console.log("Moving To Next Slide");
     // Update the "old" adjacent slides with "new" ones
     var newPrevious = slide - 1,
         newNext = slide + 1,
@@ -311,7 +311,7 @@ function moveCarouselTo(slide) {
         oldNext = slide + 2;
     // Test if carousel has more than three items
     if ((totalItems) > 2) {
-      console.log("Meets Req");
+      //console.log("Meets Req");
       // Checks and updates if the new slides are out of bounds
       if (newPrevious <= 0) {
         oldPrevious = (totalItems - 1);
@@ -356,7 +356,7 @@ function innerBarSlide()
 function autoPlay() {
 
   if (autoGallery === true) {
-  console.log("Auto Play is On");
+  //console.log("Auto Play is On");
   innerBarSlide();
   moveNext();
 }
@@ -367,7 +367,7 @@ function clickGallery()
 {
   autoGallery = false;
   TweenMax.to(innerBar, 0.3, {width:0});
-  console.log("Gallery Clicked");
+  //console.log("Gallery Clicked");
 }
 //FrontPage Scene
 var artA = document.querySelector("#module");
@@ -404,12 +404,28 @@ function navScene(pos){
 mover.addEventListener("mouseout", resetScene, false);
 
 function initMap(){
-  console.log("Map initialized");
+  //console.log("Map initialized");
+  //Options
   var options = {
     zoom:8,
     center:{lat:42.9849,lng:-81.2453}
   };
+  //My Map
   var map = new google.maps.Map(document.getElementById('map'), options);
+  //Marker
+  var marker = new google.maps.Marker({
+    position:{lat:42.9849,lng:-81.2453},
+    map:map,
+    //icon
+  });
+
+  var infoWindow = new google.maps.InfoWindow({
+    content:'<h2>Lets Go</h2>'
+  });
+
+  marker.addListener('click', function(){
+    infoWindow.open(map, marker);
+  });
 }
   // EVENT LISTENERS
 window.onresize = autoResizeDiv;
