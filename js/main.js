@@ -30,12 +30,36 @@
   var innerBar = document.querySelector("#slideInnerBar");
   var galleryBox = document.querySelector("#projects");
   var autoGallery = true;
+  var deskLock = false;
   //var button = document.getElementsByClassName("button");
   var pH;
   var p3;
   var p4;
   var nPS;
   //FUNCTIONS
+
+  //MOBILE GATE
+  var screenWidth = window.innerWidth;
+  console.log('Screen Width'+screenWidth);
+
+  function mobileGate()
+  {
+    if (window.innerWidth >= 1000)
+    {
+      deskLock = true;
+      console.log(deskLock);
+      body.addEventListener("wheel" ,scrollFunction,{passive:false}, false);
+
+    }
+    else {
+      deskLock = false;
+      console.log(deskLock);
+      body.removeEventListener("wheel" ,scrollFunction,{passive:false}, false);
+
+    }
+  }
+
+
   //HEIGHT READER
   function heightReader()
   {
@@ -43,7 +67,7 @@
     p3 = pH * 2;
     p4 = pH * 3;
     nPS = window.pageYOffset;
-    console.log(pH);
+    //console.log(pH);
   }
   //PAGE RESIZE
 function autoResizeDiv()
@@ -56,7 +80,7 @@ function autoResizeDiv()
     //console.log(window.innerHeight);
     window.slideBarWidth = window.innerWidth / totalItems;
     slideBar.style.width = slideBarWidth+"px";
-    //console.log("Resized");
+    console.log("Resized");
     //console.log(slideBarWidth);
     //console.log(slideBar);
 }
@@ -64,7 +88,9 @@ function autoResizeDiv()
 //SCROLL FUNCTIONALITY
 function scrollFunction(e)
 {
-  e.preventDefault();
+  console.log("Scrolling Fire");
+    console.log("Yes dude");
+e.preventDefault();
   var scrollValue = e.deltaY;
 //  console.log(scrollValue);
   if (scrollValue > 0){
@@ -76,6 +102,7 @@ function scrollFunction(e)
     //console.log('going up');
   }
 }
+
   //NEXT PAGE
 function nextPage()
 {
@@ -242,7 +269,7 @@ function goCont()
 // Set classes
 function setInitialClasses() {
   // This assumes there are at least three items.
-  console.log("Init Class Set");
+  //console.log("Init Class Set");
   slides[totalItems - 1].classList.add("prev");
   slides[0].classList.add("active");
   slides[1].classList.add("next");
@@ -255,11 +282,11 @@ function moveNext() {
     // If it's the last slide, reset to 0, else +1
     if (slide === (totalItems - 1)) {
       slide = 0;
-    console.log("Reset Slide");
+    //console.log("Reset Slide");
     TweenMax.to(slideBar, 0.5, {x:0+"%"});
     } else {
       slide++;
-      console.log("Next Slide");
+      //console.log("Next Slide");
       //Move slide bar
       TweenMax.to(slideBar, 0.5, {x:"+=" + 100+"%"});
     }
@@ -331,7 +358,7 @@ function moveCarouselTo(slide) {
       // Now we've worked out where we are and where we're going,
       // by adding/removing classes we'll trigger the transitions.
       // Reset old next/prev elements to default classes
-      console.log(oldNext);
+      //console.log(oldNext);
       slides[oldPrevious].className = slideClassName;
       slides[oldNext].className = slideClassName;
       // Add new classes
@@ -361,7 +388,9 @@ function autoPlay() {
   moveNext();
 }
   else
-  console.log("Auto Play is Off");
+{
+  //console.log("Auto Play is Off");
+}
 }
 function clickGallery()
 {
@@ -403,34 +432,12 @@ function navScene(pos){
 }
 mover.addEventListener("mouseout", resetScene, false);
 
-function initMap(){
-  //console.log("Map initialized");
-  //Options
-  var options = {
-    zoom:8,
-    center:{lat:42.9849,lng:-81.2453}
-  };
-  //My Map
-  var map = new google.maps.Map(document.getElementById('map'), options);
-  //Marker
-  var marker = new google.maps.Marker({
-    position:{lat:42.9849,lng:-81.2453},
-    map:map,
-    //icon
-  });
 
-  var infoWindow = new google.maps.InfoWindow({
-    content:'<h2>Lets Go</h2>'
-  });
-
-  marker.addListener('click', function(){
-    infoWindow.open(map, marker);
-  });
-}
   // EVENT LISTENERS
 window.onresize = autoResizeDiv;
 autoResizeDiv();
-body.addEventListener("wheel" ,scrollFunction, {passive: false}, false);
+window.addEventListener('resize', mobileGate, false);
+window.addEventListener('load', mobileGate, false);
 nextButton.addEventListener("click", nextPage, false);
 nextButton.addEventListener("mouseover", arrowAnimate, false);
 nextButton.addEventListener("mouseout", arrowAnimateOut, false);

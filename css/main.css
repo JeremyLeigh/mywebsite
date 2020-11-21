@@ -27,7 +27,7 @@ body
 {
   background-color: #000003;
   font-family: 'Oswald', sans-serif;
-  overflow:hidden;
+
   margin:0;
 }
 
@@ -454,6 +454,7 @@ width: auto;
 #contactContainer
 {
   top:10vh;
+  margin-bottom: 100px;
 }
 #contactTitle
 {
@@ -582,6 +583,24 @@ input:-webkit-autofill:focus {
   text-align: left;
   color: #FFFFF3;
 }
+#copyright span
+{
+  color: #a8204d;
+  font-family: 'Oswald', sans-serif;
+}
+
+#madeBy
+{
+    text-align: center;
+    color: #FFFFF3;
+}
+
+#madeBy span
+{
+  color: #a8204d;
+  font-family: 'Oswald', sans-serif;
+}
+
 #footer
 {
   height: 20vh;
@@ -590,7 +609,14 @@ input:-webkit-autofill:focus {
 
 #map
 {
-  height:80vh;
+  height:30vh;
+  margin-top: 20px;
+}
+@media screen and (min-width: 991px) {
+  #map
+  {
+    height:80vh;
+  }
 }
 
 .socIcon
