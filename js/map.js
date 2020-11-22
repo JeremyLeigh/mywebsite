@@ -77,10 +77,10 @@ function initMap(){
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#000000"
+                "color": "#a8204d"
             },
             {
-                "lightness": 20
+                "lightness": 0
             }
         ]
     },

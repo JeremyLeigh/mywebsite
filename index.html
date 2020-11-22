@@ -180,8 +180,11 @@ Fusce scelerisque pellentesque ligula, sit amet rhoncus risus mattis ut. Fusce u
             </div>
             </div>
             <input type="text" class="sneaky">
-            <div class="row">
-            <input type="submit" class="cSend offset-4 col-4" name="contactsubmit" value="SEND">
+            <div class="row sendWrap">
+              <div class="sendWrapM offset-4 col-4">
+              <input type="submit" class="cSend" name="contactsubmit" value="SEND">
+              <div class="sendBar"></div>
+              </div>
           </div>
           </form>
         </div>
@@ -190,13 +193,15 @@ Fusce scelerisque pellentesque ligula, sit amet rhoncus risus mattis ut. Fusce u
     </section>
     <footer id="footer" class="container-fluid">
       <h2 class="sneaky">Footer</h2>
-      <ul id="socials" class="col-sm">
+      <div class="row footyWrap">
+      <ul id="socials" class="col-sm-4">
         <li class="socIcon" id="github"><a target="_blank" rel="noopener noreferrer" href="https://github.com/JeremyLeigh"><img alt="Github" src="images/icons/git.svg" width="40px" height="40px"></a></li>
         <li class="socIcon" id="gplus"><a target="_blank" rel="noopener noreferrer" href="https://linkedin.com"><img alt="Google Plus" src="images/icons/google.svg" width="40px" height="40px"></a></li>
         <li class="socIcon" id="linkedin"><a target="_blank" rel="noopener noreferrer" href="https://linkedin.com"><img alt="LinkedIn" src="images/icons/linked.svg" width="40px" height="40px"></a></li>
       </ul>
-      <p id="copyright" class="col-sm-4 offset-sm-8">Built by <span>me</span> &#169; twentytwenty</p>
+      <p id="copyright" class="col-sm-4">Built by <span>me</span> &#169; twentytwenty</p>
       <p id="madeBy" class="col-sm-4">Made from <span>&#123; scratch &#125;</span></p>
+      </div>
     </footer>
 </div>
 

@@ -19,10 +19,7 @@ outline: none;
 box-shadow: none;
 resize: none; /*remove the resize handle on the bottom right*/
 }
-.cSend
-{
-  font-family: 'Oswald', sans-serif;
-}
+
 body
 {
   background-color: #000003;
@@ -448,7 +445,7 @@ width: auto;
 
 #Page4
 {
-  background-color: #FFFFF3;
+  background-color: #2b2b2b;
 }
 
 #contactContainer
@@ -462,6 +459,7 @@ width: auto;
  margin-top: 0;
  text-align: left;
  font-size: 3rem;
+ color: #FFFFF3;
 }
 @media (min-width: 800px) {
 .copyWrap
@@ -473,29 +471,60 @@ margin-left:-400px;
 }
 .contactButton
 {
-background-color: lightgrey;
+background-color:#333333;
 border: none;
-color: #787878;
+color: #FFFFF3;
 padding-top: 10px;
 padding-bottom: 1rem;
 padding-left: 1rem;
 width: inherit;
-caret-color: #a8204d;
+caret-color: #FFFFF3;
 }
 .cSend
 {
-  background-color: lightgrey;
-  color: black;
-  border: none;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  color: #FFFFF3;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #FFFFF3;
   padding-top: 10px;
   padding-bottom: 1rem;
-  padding-left: 1rem;
+  overflow: hidden;
+  -webkit-transition: all 0.4s;
+-moz-transition: all 0.4s;
+transition: all 0.4s;
+ background: none;
+ width: 100%;
+   z-index: 5;
 }
-.cSend:hover {
+.sendBar
+{
   background-color: #a8204d;
-  transition: background-color 0.8s;
-
+  height: 100%;
+  width: 0px;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  bottom:0;
+  z-index: 4;
 }
+
+.cSend:hover
+{
+  color: #FFFFF3;
+  border-color: #a8204d;
+}
+
+.sendWrapM:hover > .sendBar
+{
+  width: 100%;
+}
+
+.sendWrapM
+{
+  padding: 0;
+}
+
 /* Button style */
 button {
   border: none;
@@ -552,10 +581,6 @@ input:focus
   width: 100%;
 }
 
-.cSend:hover
-{
-  color:#FFFFF3;
-}
 /* Change Autocomplete styles in Chrome*/
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -564,8 +589,9 @@ input:-webkit-autofill:focus {
   -webkit-text-fill-color: #FFFFF3;
   -webkit-box-shadow: 3px 3px 3px 5000px #a8204d inset;
   transition: background-color 5000s ease-in-out 0s;
-  opacity: 0.8;
+  opacity: 0.7;
 }
+
 
 .copyWrap
 {
@@ -576,11 +602,12 @@ input:-webkit-autofill:focus {
 {
   font-size: 1rem;
   padding-left: 5px;
+  color: #FFFFF3;
 }
 
 #copyright
 {
-  text-align: left;
+  text-align: center;
   color: #FFFFF3;
 }
 #copyright span
@@ -621,14 +648,25 @@ input:-webkit-autofill:focus {
 
 .socIcon
 {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
-  margin-left: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+#socials
+{
+  text-align: center;
 }
 
 #socials li
 {
       cursor: pointer;
       margin-top: 1rem;
+}
+
+.footyWrap
+{
+  padding-bottom: 5rem;
+  background-color: #000003; 
 }
