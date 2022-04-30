@@ -1,10 +1,13 @@
 function initMap(){
   //console.log("Map initialized");
   //Options
-  var options = {
-    zoom:8,
+
+
+  var mapOptions = {
+    zoom:8.6,
     center:{lat:42.9849,lng:-81.2453},
     disableDefaultUI: true,
+    backgroundColor: 'hsla(0, 0%, 0%, 0)',
     styles:[
     {
         "featureType": "all",
@@ -14,7 +17,7 @@ function initMap(){
                 "saturation": 36
             },
             {
-                "color": "#000000"
+                "color": "#282828"
             },
             {
                 "lightness": 40
@@ -29,7 +32,7 @@ function initMap(){
                 "visibility": "on"
             },
             {
-                "color": "#000000"
+                "color": "#282828"
             },
             {
                 "lightness": 16
@@ -62,25 +65,13 @@ function initMap(){
         "elementType": "geometry.stroke",
         "stylers": [
             {
-                "color": "#000000"
+                "color": "#fff"
             },
             {
-                "lightness": 17
+                "lightness": 100
             },
             {
                 "weight": 1.2
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#a8204d"
-            },
-            {
-                "lightness": 0
             }
         ]
     },
@@ -92,7 +83,7 @@ function initMap(){
                 "color": "#000000"
             },
             {
-                "lightness": 21
+              "lightness": 6
             }
         ]
     },
@@ -101,7 +92,7 @@ function initMap(){
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#000000"
+                "color": "#282828"
             },
             {
                 "lightness": 17
@@ -113,7 +104,7 @@ function initMap(){
         "elementType": "geometry.stroke",
         "stylers": [
             {
-                "color": "#000000"
+                "color": "#282828"
             },
             {
                 "lightness": 29
@@ -128,7 +119,7 @@ function initMap(){
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#000000"
+                "color": "#282828"
             },
             {
                 "lightness": 18
@@ -140,7 +131,7 @@ function initMap(){
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#000000"
+                "color": "#282828"
             },
             {
                 "lightness": 16
@@ -160,21 +151,66 @@ function initMap(){
         ]
     },
     {
-        "featureType": "water",
-        "elementType": "geometry",
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill",
         "stylers": [
             {
                 "color": "#000000"
             },
             {
-                "lightness": 17
+                "lightness": 10
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.landcover",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 5
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.terrain",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+              "visibility": "off"
+            },
+        ]
+    },
+    {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "lightness": 0
             }
         ]
     }
 ]
   };
   //My Map
-  var map = new google.maps.Map(document.getElementById('map'), options);
+  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
   //Marker
   var marker = new google.maps.Marker({
     position:{lat:42.9849,lng:-81.2453},

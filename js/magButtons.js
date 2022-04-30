@@ -38,7 +38,8 @@ function MagneticButton(_me){
   function over(e){
     _over = true;
     //Read my position (to-do: only in resize instead)
-    _meX = _me.offsetLeft+_meRadius/2, _meY = _me.offsetTop+_meRadius/2;
+    //ADD VALUE AT END TO REEL IT IN
+    _meX = _me.offsetLeft+_meRadius/2+30, _meY = _me.offsetTop+_meRadius/2+20;
     _tweenedDist = 0;
     moved(e);
     //Start engine
@@ -51,10 +52,10 @@ function MagneticButton(_me){
     TweenMax.to(_this, .15, {_speed:.2, ease:Linear.easeNone});
   }
   function moved(e){
-    _curDist = pointDist(e.clientX,e.clientY, _meX, _meY);
+    _curDist = pointDist(e.clientX,e.offsetY, _meX, _meY);
     if(_curDist < 40) _closeSpeed = 1;
     else _closeSpeed = .5;
-    _angle = angleBetweenPoints(e.clientX,e.clientY, _meX, _meY);
+    _angle = angleBetweenPoints(e.clientX,e.offsetY, _meX, _meY);
   }
   function engine(e){
     _tweenedDist += (_curDist-_tweenedDist)*_this._speed*_closeSpeed;

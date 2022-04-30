@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="167" height="83" viewBox="0 0 167 83">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 58.333px;
+        text-anchor: middle;
+        font-family: Roboto;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path id="arrow" class="cls-1" d="M0,71L29,50V62H138v9H0Z"/>
+  <text id="Des" class="cls-2" x="35.469" y="7"><tspan x="35.469">Des</tspan></text>
+</svg>

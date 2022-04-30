@@ -1,0 +1,76 @@
+
+#text{
+  width: 576px;
+  height: 216px;
+  -webkit-mask-image: url("../images/masks/text.webp");
+  mask-image: url("../images/masks/text.webp");
+  stroke-dasharray: 15712.3583984375;
+  transform: translateY(30px);
+}
+
+#text2{
+  width: 576px;
+  height: 216px;
+  -webkit-mask-image: url("../images/masks/text2.webp");
+  mask-image: url("../images/masks/text2.webp");
+  stroke-dasharray: 26139.798828125;
+  transform: translateY(-20px);
+}
+
+.ready1
+{
+  animation: 1.2s fillSvg ease-in-out;
+  animation-delay: 0.1s;
+}
+
+.ready2
+{
+  animation: 1.2s fillSvg2 ease-in-out;
+  animation-delay: 0.1s;
+}
+
+.readyScale
+{
+  animation: 1.2s scaleIn ease-out;
+}
+
+@keyframes fillSvg
+{
+    0%{
+        stroke-dashoffset: 15712.3583984375;
+
+    }
+    100%{
+        stroke-dashoffset: 0;
+
+    }
+}
+@keyframes fillSvg2
+{
+    0%{
+        stroke-dashoffset: 26139.798828125;
+
+    }
+    100%{
+        stroke-dashoffset: 0;
+
+    }
+}
+
+#aniTextWrap
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes scaleIn
+{
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+      transform: scale(1);
+    }
+}

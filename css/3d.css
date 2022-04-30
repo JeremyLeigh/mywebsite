@@ -1,0 +1,76 @@
+
+
+:root {
+  --boxColor: #212120;
+}
+
+#ThreedArt {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+#scene {
+  position: relative;
+  bottom:20vh;
+  right:5px;
+  transform: scale(0.08);
+  display: none;
+}
+
+@media screen and (min-width:800px) {
+  #scene {
+    bottom:240px;
+  }
+}
+
+.rightBracket
+{
+   transform: translateX(1.41em) translateY(-1.41em) rotateZ(180deg);
+}
+
+
+.part1
+{
+  transform: rotateZ(45deg);
+}
+
+.part2
+{
+    transform: rotateZ(-45deg) translateX(1em) translateY(-0.965em);
+}
+
+.cube {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  bottom: -1em;
+  left: -1em;
+}
+
+.front {
+  position: absolute;
+  background-color: #fffff3;
+  box-shadow: 0 0 0.5em #000a inset;
+  opacity: 1;
+
+}
+
+.part2 > .front
+{
+  height: 50%;
+
+}
+
+
+.front {
+  width: 50%;
+  height: 100%;
+  box-shadow: none;
+}
