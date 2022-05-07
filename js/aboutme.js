@@ -17,6 +17,7 @@ var learnMore = document.querySelectorAll('.learnP');
 var aboutTitle = document.querySelector('#aboutTitle');
 var learnLine = document.querySelector('#learnLine');
 var hider = document.querySelector('#aboutHider');
+var titleWrap = document.querySelector("#aTitleWrap");
 var aboutActive = 0;
 var scaleValue = 1;
 //designer
@@ -55,11 +56,12 @@ function aboutChange()
   if (aboutActive == 0)
   {
   canCall = false;
-  aboutWrap.style.top = "10vh";
+  aboutWrap.style.top = "6vh";
   centerBg.style.filter = "brightness(0.4)";
   aboutTitle.style.transform = "scale(0.8)";
   learnMore[0].innerHTML = "Exit";
   learnMore[0].style.paddingTop = "15px";
+  titleWrap.style.height = "200px";
   hider.style.height = '400px';
   middleHider.style.height = '102px';
   scaleValue = 1.1;
@@ -82,6 +84,7 @@ function aboutChange()
   aboutTitle.style.transform = "translateY(0)";
   aboutTitle.style.transform = "scale(1)";
   learnMore[0].innerHTML = "View More";
+  titleWrap.style.height = "300px";
   hider.style.height = '0';
   middleHider.style.height = '0';
   if (window.innerWidth >= 800)
