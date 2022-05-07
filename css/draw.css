@@ -59,7 +59,7 @@
 
 #aniTextWrap
 {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;

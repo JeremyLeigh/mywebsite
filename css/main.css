@@ -425,7 +425,7 @@ display: none;
 {
   position: absolute;
   z-index: -2;
-  width: 95vw;
+  width: 70vw;
   height: auto;
   bottom:0vh;
   transition: transform 0.3s;
@@ -434,8 +434,12 @@ display: none;
 @media screen and (min-width: 1200px) {
   #centerArt
   {
+<<<<<<< Updated upstream
     width: 35%;
     bottom: -5%;
+=======
+    width: 30vw;
+>>>>>>> Stashed changes
   }
 }
 
