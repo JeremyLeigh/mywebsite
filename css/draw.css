@@ -8,6 +8,7 @@
   /*transform: translateY(-100px);*/
   transform:translateY(-30px) scale(0.6);
   position: absolute;
+  display: none;
 }
 
 #text2{
@@ -19,6 +20,7 @@
   /*transform: translateY(100px);*/
   transform: translateY(90px) scale(0.6);
   position: absolute;
+  display: none;
 }
 
 .ready1
@@ -99,12 +101,14 @@
 @media screen and (min-width: 1200px) {
 #text
 {
+  display: flex;
   transform: translateX(-23vw) translateY(-40px) scale(0.8);
 
 }
 
 #text2
 {
+  display: flex;
   transform: translateX(27vw) translateY(-40px) scale(0.8);
 }
 }
@@ -112,11 +116,13 @@
 @media screen and (min-width: 1600px) {
 #text
 {
+  display: flex;
   transform: translateX(-19vw) translateY(-40px);
 }
 
 #text2
 {
+  display: flex;
   transform: translateX(22vw) translateY(-40px);
 }
 }

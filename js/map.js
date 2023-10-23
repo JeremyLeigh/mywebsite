@@ -5,7 +5,7 @@ function initMap(){
 
   var mapOptions = {
     zoom:8.6,
-    center:{lat:42.9849,lng:-81.2453},
+    center:{lat:43.1940,lng:-80.3845},
     disableDefaultUI: true,
     backgroundColor: 'hsla(0, 0%, 0%, 0)',
     styles:[
@@ -213,8 +213,11 @@ function initMap(){
   var map = new google.maps.Map(document.getElementById('map'), mapOptions);
   //Marker
   var marker = new google.maps.Marker({
-    position:{lat:42.9849,lng:-81.2453},
+    position:{lat:43.1940,lng:-80.3845},
     map:map,
+    label: {
+    text:'location marker',
+    color: 'rgba( 255, 255, 255, 0 )'},
     icon:'images/icons/marker.svg'
   });
 

@@ -1,0 +1,32 @@
+[10-May-2022 02:15:37 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/admin_index.php on line 28
+[10-May-2022 02:15:50 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/admin_index.php on line 28
+[10-May-2022 02:16:53 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/admin_index.php on line 28
+[10-May-2022 02:17:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function confirm_logged_in() in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/admin_makechanges.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/admin_makechanges.php on line 4
+[10-May-2022 02:20:34 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/admin_index.php on line 28
+[10-May-2022 02:20:36 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/admin_index.php on line 28
+[10-May-2022 02:22:26 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/admin_index.php on line 28
+[10-May-2022 02:22:27 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/admin_index.php on line 28
+[10-May-2022 02:22:42 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/admin_index.php on line 28
+[13-May-2022 19:55:57 UTC] PHP Notice:  Undefined index: users_id in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 8
+[13-May-2022 19:55:57 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 12
+[13-May-2022 19:55:57 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 28
+[13-May-2022 19:55:57 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 43
+[13-May-2022 19:55:57 UTC] PHP Notice:  Undefined index: users_name in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 52
+[13-May-2022 19:56:02 UTC] PHP Notice:  Undefined index: users_id in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_edituser.php on line 8
+[13-May-2022 19:56:02 UTC] PHP Warning:  Illegal string offset 'user_fname' in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_edituser.php on line 40
+[13-May-2022 19:56:02 UTC] PHP Warning:  Illegal string offset 'user_lname' in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_edituser.php on line 43
+[13-May-2022 19:56:02 UTC] PHP Warning:  Illegal string offset 'user_name' in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_edituser.php on line 46
+[13-May-2022 19:56:02 UTC] PHP Warning:  Illegal string offset 'user_pass' in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_edituser.php on line 49
+[13-May-2022 19:56:07 UTC] PHP Notice:  Undefined index: users_id in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 8
+[13-May-2022 19:56:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 12
+[13-May-2022 19:56:07 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 28
+[13-May-2022 19:56:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 43
+[13-May-2022 19:56:07 UTC] PHP Notice:  Undefined index: users_name in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 52
+[13-May-2022 19:56:32 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 28
+[13-May-2022 22:55:00 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 28
+[13-May-2022 22:55:03 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 28
+[13-May-2022 22:55:08 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 28
+[13-May-2022 22:55:21 UTC] PHP Notice:  Undefined variable: wlcmeMsge in /home/u645609075/domains/jeremyleigh.xyz/public_html/organdono/admin/admin_index.php on line 28

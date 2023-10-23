@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="132" height="85" viewBox="0 0 132 85">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #9e904c;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        stroke-width: 2px;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#a49758"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="hat" class="cls-1">
+    <path class="cls-2" d="M34.1,77.323V34.548S31,8.5,2.2,21.387C14.708,0.022,38.468-3.456,51.7,2.742A35.082,35.082,0,0,1,66,14.807S70.78,7.318,81.4,2.742C96.168-3.621,121.366.019,128.7,26.871c-13.438-12.381-32.085-4.93-33,6.581-0.475,5.981,0,43.871,0,43.871S80.3,85,64.9,85,34.1,77.323,34.1,77.323Z"/>
+    <path class="cls-3" d="M67.1,18.1V85"/>
+    <path class="cls-3" d="M35.2,47.71L51.7,31.258,66,45.516,81.4,32.355,94.6,47.71"/>
+    <path class="cls-3" d="M4.4,23.581L0,28.067,4.4,40.032,8.8,28.067Z"/>
+    <path class="cls-3" d="M127.6,27.968l-4.4,4.487,4.4,11.965L132,32.455Z"/>
+  </g>
+</svg>

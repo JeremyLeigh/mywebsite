@@ -39,7 +39,20 @@
   var p3;
   var p4;
   var nPS;
+  var initialsText = document.querySelectorAll("#initials > h5");
+  //Global Booleans
+  var mobileSlideTrigger = true;
+  //current year
+  const d = new Date();
+  let year = d.getFullYear() - 2000;
+//console.log("Current year is "+ year);
   //FUNCTIONS
+
+
+  function changeDate()
+  {
+  initialsText[1].innerHTML = year;
+  }
 
   //MOBILE GATE
   var screenWidth = window.innerWidth;
@@ -52,10 +65,15 @@
       deskLock = true;
       //console.log(deskLock);
       body.addEventListener("wheel" ,scrollFunction,{passive:false}, false);
-
+      mobileSlideTrigger = true;
     }
     else {
       deskLock = false;
+      if (mobileSlideTrigger == true)
+      {
+      mobileSlide();
+      }
+      mobileSlideTrigger = false;
       //console.log(deskLock);
       body.removeEventListener("wheel" ,scrollFunction,{passive:false}, false);
     }
@@ -355,7 +373,6 @@ function clickGallery()
 
 
 //initials
-var initialsText = document.querySelectorAll("#initials > h5");
 function initialsReveal()
 {
   //console.log("good to go");
@@ -372,7 +389,7 @@ function initialsHide()
 {
   //console.log("good to go");
   initialsText[0].innerHTML = '20';
-  initialsText[1].innerHTML = '22';
+  initialsText[1].innerHTML = year;
   initialsText[0].style.transform = "translateY(-20px)";
   initialsText[1].style.transform = "translateY(-20px)";
   initialsText[0].style.fontSize = "18px";
@@ -414,6 +431,7 @@ function  arrowFlip()
   // EVENT LISTENERS
 window.addEventListener('resize', mobileGate, false);
 window.addEventListener('load', mobileGate, false);
+window.addEventListener('load', changeDate, false);
 //Click
 homeButton.addEventListener("click", goHome, false);
 aboutButton.addEventListener("click", goAbout, false);

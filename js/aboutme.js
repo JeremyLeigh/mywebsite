@@ -6,6 +6,31 @@ var leftSwitch = 0;
 var rightSwitch = 0;
 var aboutButtons = document.querySelectorAll('.aboutB');
 var buttonHit = document.querySelectorAll('.aboutB .hit');
+//Mobile Des/Dev Slide
+var desBottom = document.querySelector('#designBottom');
+var devBottom = document.querySelector('#devBottom');
+var desUl = document.querySelector('#designBottom ul');
+var devUl = document.querySelector('#devBottom ul');
+//console.log(desUl);
+let cSlide = 0;
+function mobileSlide()
+{
+  //console.log("sliding");
+  if (cSlide == 5)
+  {
+    cSlide = 0;
+  }
+  let slideDist = -(cSlide * 20) + '%';
+  //console.log(slideDist);
+  TweenMax.to(desUl, 1, {x: slideDist, ease:Linear.easeNone});
+  TweenMax.to(devUl, 1, {x: slideDist, ease:Linear.easeNone});
+  setTimeout(() => {
+    mobileSlide();
+  }, 3000);
+  cSlide++;
+}
+
+
 var desB = buttonHit[1];
 var devB = buttonHit[2];
 var desBack = buttonHit[0];
@@ -29,15 +54,28 @@ var devImgs = document.querySelectorAll('#devBottom ul li');
 
 function moveToSide(i)
 {
+  desBottom.style.visibility = 'hidden';
+  devBottom.style.visibility = 'hidden';
 if (middleSwitch == 1) {
   moveMe.style.transform = 'translateX(0)';
   middleSwitch = 0;
   leftSwitch = 0;
   rightSwitch = 0;
+  console.log("Centered and Reset");
 }
 else
 {
   moveMe.style.transform = 'translateX('+i+'100vw)';
+  if (i == '-')
+  {
+    //console.log(i);
+  devBottom.style.visibility = 'visible';
+  }
+  else
+  {
+    //console.log(i);
+  desBottom.style.visibility = 'visible';
+  }
   for (var i = 0; i < desImgs.length; i++) {
     iDelay = i/15;
     TweenMax.fromTo(desImgs[i], 0.3, {y: 1000}, {y:0, delay:iDelay, ease:"none"});
@@ -62,7 +100,7 @@ function aboutChange()
   learnMore[0].innerHTML = "Exit";
   learnMore[0].style.paddingTop = "15px";
   titleWrap.style.height = "200px";
-  hider.style.height = '400px';
+  hider.style.height = '430px';
   middleHider.style.height = '102px';
   scaleValue = 1.1;
   centerBg.style.transform = "scale("+scaleValue+")";
@@ -101,6 +139,8 @@ function aboutChange()
 
   function backToCenter()
   {
+    desBottom.style.visibility = 'hidden';
+    devBottom.style.visibility = 'hidden';
   moveMe.style.transform = 'translateX(0)';
   middleSwitch = 0;
   leftSwitch = 0;

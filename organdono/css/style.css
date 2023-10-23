@@ -1,0 +1,1671 @@
+@charset "UTF-8";
+.fadeInRight {
+    visibility: visible;
+    animation-name: fadeInRight;
+}
+
+.fadeInUp {
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+
+
+/* /* SVG for Banners */
+
+
+/* ======================================================================*/
+
+
+/* Global */
+
+
+/* ======================================================================*/
+
+body {
+    color: #313131;
+    font-family: 'Helvetica', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Helvetica', sans-serif, Arial;
+    font-size: 1.5em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    line-height: 26.4px;
+}
+
+p {
+    font-family: 'Helvetica', sans-serif, Arial;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    color: #313131;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tabs-title > a:focus,
+.tabs-title > a:active,
+.tabs-title > a:hover,
+.tabs-title > a[aria-selected="true"] {
+    color: #484848;
+    background: none;
+}
+
+.tabs-content {
+    padding-top: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.white {
+    color: #fff;
+}
+
+.red {
+    color: #e31d1a;
+}
+
+.redBig {
+    color: #e31d1a;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 600;
+}
+
+
+/*.readMoreBtn {
+    display: block;
+    width: 152px;
+    padding: 7px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ca2e31;
+    color: #fff;
+}*/
+
+.readMoreBtn {
+    display: block;
+    width: 152px;
+    padding: 7px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid #313131;
+    border-radius: 17px;
+    color: #313131;
+}
+
+.readMoreBtn:hover {
+    color: #fff;
+    background-color: #313131;
+}
+
+.btn-2 {
+    display: inline-block;
+    width: 143px;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #313131;
+    font-size: .9em;
+}
+
+.btn-2:hover {
+    color: #fff;
+    font-weight: bolder;
+    background-color: #313131;
+}
+
+
+/* SVG for Banners */
+
+
+/* ======================================================================*/
+
+.st0 {
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    animation: fadein 1s;
+    opacity: 0;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.st1 {
+    -moz-transform-origin: 424px 153px;
+    -webkit-transform-origin: 424px 153px;
+    -ms-transform-origin: 424px 153px;
+    transform-origin: 424px 153px;
+    -webkit-animation: spinB 4s steps(12, end) infinite;
+    -moz-animation: spinB 4s steps(12, end) infinite;
+    -ms-animation: spinB 4s steps(12, end) infinite;
+    animation: spinB 4s steps(12, end) infinite;
+}
+
+@-webkit-keyframes spinB {
+    0% {
+        -webkit-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        transform: rotate(0deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        transform: rotate(360deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@keyframes spinB {
+    0% {
+        -webkit-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        transform: rotate(0deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        transform: rotate(360deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+.st1:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.numbers.st2 {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.numbers {
+    opacity: 0;
+    /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1;
+    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.numbers.st3 {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.st4 {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+
+/* Top Bar */
+
+
+/* ======================================================================*/
+
+.spanTitle {
+    margin-top: 32px;
+    text-align: center;
+    border-bottom: 2px solid #2d2d2d;
+    padding-top: 9px;
+}
+
+.iconsTop {
+    text-align: right;
+}
+
+#socialTop {
+    background-color: #e31d1a;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+#socialTop ul {
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+#socialTop ul li {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#socialTop ul li a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Main Navigation */
+
+
+/* ======================================================================*/
+
+#widemenu {
+    height: 65px;
+    margin-top: 31px;
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+}
+
+.top-bar-right {
+    margin: 14px 55px 5px 0;
+}
+
+.top-bar,
+.top-bar ul {
+    background-color: #f1f1f1;
+}
+
+.menu-text {
+    margin-left: 150px;
+    width: 11.5rem;
+}
+
+.menu-icon::after {
+    background: #434343;
+    box-shadow: 0 7px 0 #434343, 0 14px 0 #434343;
+}
+
+.top-bar-right li a {
+    color: #313131;
+    font-weight: bolder;
+}
+
+.donateBtn {
+    background-color: #e31d1a;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    width: 8rem;
+    text-transform: uppercase;
+}
+
+.title-bar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    margin-top: 31px;
+    background: #f1f1f1;
+}
+
+.registerBtnTop {
+    display: inline;
+    background-color: #e31d1a;
+    padding: 6px 19px;
+    border-radius: 28px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    width: 120px;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 6px;
+    position: relative;
+    z-index: 400;
+}
+
+.title-bar-title {
+    width: 7.5rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .title-bar {
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .registerBtnTop {
+        width: 100px;
+        font-size: 0.9em;
+    }
+}
+
+
+/* Yes No Divs */
+
+
+/* ======================================================================*/
+
+.yesNoCon {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 200rem;
+}
+
+.yesNoCon img {
+    width: 4.6%;
+}
+
+@media only screen and (max-width: 320px) {
+    .yesNoCon img {
+        width: 10%;
+    }
+}
+
+.yesBtn {
+    background-color: #313131;
+    margin-bottom: 0px;
+}
+
+.yesBtn:hover,
+.yesBtn:active,
+.yesBtn:focus {
+    background-color: #313131;
+}
+
+.noBtn {
+    background-color: #e31d1a;
+    margin-bottom: 0px;
+}
+
+.noBtn:hover,
+.noBtn:active,
+.noBtn:focus {
+    background-color: #e31d1a;
+}
+
+
+/* Main Navigation _ mobile */
+
+
+/* ======================================================================*/
+
+.position-left {
+    top: 31px;
+}
+
+.position-left li a {
+    color: #434242;
+    display: block;
+    padding: 25px 43px;
+    font-size: 1.1em;
+    width: 263px;
+    /*border: 1px solid rgba(45, 45, 43, 0.2);*/
+}
+
+.position-left li:nth-child(1) {
+    /*border-top: 1px rgba(45, 45, 43, 0.2);*/
+}
+
+.menu > li > a i {
+    margin-right: 1.25rem;
+}
+
+.off-canvas {
+    background: #f1f1f1;
+    z-index: 200;
+}
+
+.registerBtnMenu {
+    display: inline-block;
+    background-color: #e31d1a;
+    padding: 8px 36px;
+    border-radius: 28px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    width: 177px;
+    margin-left: 31px;
+    margin-top: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    z-index: 400;
+}
+
+.navDonarBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.position-left.is-transition-push::after {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0)
+}
+
+
+/* Header */
+
+
+/* ======================================================================*/
+
+.bannerDesktop {
+    display: block;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.bannerMobile {
+    display: none;
+    width: 0%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .bannerDesktop {
+        display: none;
+        width: 0%;
+    }
+    .bannerMobile {
+        display: block;
+        width: 100%;
+        margin-top: 80px;
+    }
+}
+
+.menu li .navBder {
+    border-right: 2px solid #ca2e31;
+}
+
+.menu > li > a {
+    line-height: 0;
+}
+
+.no-js .top-bar {
+    display: none;
+}
+
+@media screen and (min-width: 40em) {
+    .no-js .top-bar {
+        display: block;
+    }
+    .no-js .title-bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .registerBtn {
+        display: none;
+    }
+}
+
+.navLine {
+    color: #ee8d8d;
+    margin-left: 15px;
+}
+
+.banner {
+    display: block;
+    position: relative;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .banner {
+        margin-top: 85px;
+    }
+}
+
+@media screen and (min-width: 64.063em) and (max-width: 90em) {
+    .banner {
+        margin-left: 13%;
+    }
+}
+
+@media screen and (min-width: 90.063em) and (max-width: 120em) {
+    .banner {
+        margin-left: 26%;
+    }
+}
+
+@media only screen and (min-width: 120.063em) {
+    .banner {
+        left: 22%;
+    }
+}
+
+
+/* About Us */
+
+
+/* ======================================================================*/
+
+.aboutCon {
+    background: #f1f1f1;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.aboutTxCon h4 {
+    color: #313131;
+    border-left: 3px solid #313131;
+}
+
+.borderBox-1 {
+    width: 218px;
+    height: 319px;
+    border: 5px solid #575757;
+    position: relative;
+    z-index: 95;
+    top: 7rem;
+}
+
+.slogan-1 {
+    font-weight: bold;
+    color: #3b3b3a;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 3em;
+    /*    text-shadow: 1px 2.5px #848484;*/
+    position: relative;
+    z-index: 99;
+    top: 10rem;
+    left: 11.7rem;
+    margin-bottom: 0px;
+}
+
+.img1 {
+    border: 5px solid #575757;
+    position: relative;
+}
+
+@media all and (max-width: 480px) {
+    .borderBox-1 {
+        left: 27%;
+        top: -20rem;
+    }
+    .slogan-1 {
+        top: -7rem;
+        left: 2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .aboutCon {
+        padding-top: 67px;
+    }
+    .aboutTxCon {
+        margin-top: -282px;
+    }
+    .imgCon {
+        margin-top: 20px;
+    }
+    .aboutSubCon {
+        margin-top: 117px;
+    }
+}
+
+@media (max-width: 735px) and (min-width: 568px) {
+    .borderBox-1 {
+        left: -27%;
+        top: -12rem;
+        margin-top: 20px;
+        margin-bottom: 33px;
+    }
+    .slogan-1 {
+        top: -10rem;
+    }
+    .aboutTxCon {
+        margin-top: 282px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .imgCon {
+        padding-left: 0px;
+        margin-left: 200px;
+    }
+    .img1 {
+        margin-top: 55px;
+    }
+    .slogan-1 {
+        left: 3%;
+    }
+}
+
+
+/* Register with SVG icons */
+
+
+/* ======================================================================*/
+
+.svgIcon {
+    width: 22%;
+    margin-left: 39%;
+    margin-bottom: 10%;
+    display: block;
+}
+
+.svgIcon-2 {
+    margin-bottom: 17%;
+    text-align: center;
+    margin-top: 7%;
+    width: 33%;
+}
+
+.registerCon {
+    width: 100%;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.registerInfo {
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    color: #313131;
+}
+
+.infoTxt {
+    width: 293px;
+    text-align: left;
+    margin-left: 91px;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .infoTxt {
+        position: relative;
+        left: 10%;
+        margin-left: 0;
+    }
+}
+
+
+/* Share your story */
+
+
+/* ======================================================================*/
+
+.button.alert {
+    background-color: #464646;
+    color: #fff;
+    vertical-align: center;
+}
+
+.button.alert:hover,
+.button.alert:focus {
+    background-color: #efefef;
+    color: #434343;
+}
+
+.column:last-child:not(:first-child),
+.columns:last-child:not(:first-child) {
+    float: left;
+}
+
+.subsCon {
+    background-color: #e31d1a;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.shareCon {
+    display: inline-block;
+}
+
+.subsTxt {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 26px;
+}
+
+.shareBtn {
+    display: block;
+    color: #fff;
+    margin-top: 17px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.shareIcon {
+    width: 3em;
+    height: 3em;
+    margin-left: 3%;
+    float: left;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+
+/* Stats Information */
+
+
+/* ======================================================================*/
+
+.statsCon {
+    margin-top: 5rem;
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+.statsImg {
+    border: 5px solid #575757;
+    position: relative;
+    max-width: 200%;
+}
+
+.statsCon p {
+    color: #434242;
+}
+
+.dingbats {
+    font-size: 2.3em;
+    margin-bottom: -.4em;
+}
+
+.aboutInfoTags {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.aboutInfo img {
+    max-width: 5%;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutInfo img {
+        max-width: 9%;
+    }
+}
+
+
+/* More Information (Mockup image) */
+
+
+/* ======================================================================*/
+
+#infoCon {
+    background-color: #f1f1f1;
+}
+
+#infoCon .row {
+    padding-top: 30px;
+}
+
+#infoCon p {
+    padding-top: 25px;
+}
+
+#infoCon a {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+#infoCon h6 {
+    border-left: 3px solid #313131;
+    margin-top: 3.5rem;
+    color: #313131;
+}
+
+.moreinfo {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.moreinfo-2 {
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-top: -3rem;
+}
+
+.mockupImg {
+    max-width: 115%;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .mockupImg {
+        max-width: 94%;
+        margin-top: 8rem;
+    }
+}
+
+.stores {
+    margin-bottom: 1rem;
+}
+
+
+/* Story of Hope */
+
+
+/* ======================================================================*/
+
+.container {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.content {
+    width: 150%;
+}
+
+.content-text {
+    float: left;
+    width: 30%;
+}
+
+.grey {
+    color: #565656;
+    //opacity: 0.5;
+}
+
+.content-text:first-child {
+    margin-left: -21.6%;
+}
+
+.content-text:nth-child(2) {
+    margin: 0 10%;
+}
+
+.arrow {
+    position: absolute;
+    top: 130px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container .fa {
+    font-size: 2.5em;
+    color: #575757;
+}
+
+.left-arrow {
+    left: 20px;
+    z-index: 1;
+}
+
+.right-arrow {
+    right: 20px;
+    z-index: 1;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    opacity: 0.9;
+}
+
+.transition {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+}
+
+.content-left {
+    margin-left: 60%;
+}
+
+.content-right {
+    margin-left: -60%;
+}
+
+.tabs-panel {
+    padding: 0rem;
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        width: 200%;
+    }
+    .content-text {
+        float: left;
+        width: 30%;
+    }
+    .hopeConInfo p {
+        font-size: 0.9em;
+        width: 125%;
+    }
+    .content-text:nth-child(1) {
+        margin: 0 12%;
+    }
+    .content-text:nth-child(2) {
+        margin: 0px 12%;
+    }
+    .content-text:nth-child(3) {
+        margin: 0px 12%;
+    }
+    #text-1 {
+        float: left;
+    }
+    .container .fa {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hopeConInfo {
+        margin-top: 10px;
+    }
+}
+
+.hopeImg {
+    position: relative;
+    z-index: 96;
+    max-width: 50%;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 800;
+}
+
+.hopeCon {
+    height: auto;
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.hopeContents {
+    margin-top: 30px;
+}
+
+.hopeConInfo {
+    margin-bottom: 36px;
+}
+
+.hopeConInfo h5 {
+    color: #313131;
+    border-left: 3px solid #313131;
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.hopeConInfo p {
+    text-align: left;
+    width: 143%;
+}
+
+@media all and (max-width: 480px) {
+    .hopeImg {
+        margin-bottom: 10px;
+    }
+    .hopeConInfo p {
+        width: 119%;
+    }
+}
+
+.subTitle {
+    font-size: 1.2em;
+}
+
+.handsIcon {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 3rem;
+    left: 48%;
+    outline: medium none;
+    padding: 10px 7px;
+    position: relative;
+    top: -24px;
+    width: 3rem;
+    z-index: 80;
+}
+
+@media only screen and (min-width: 1920px) {
+    .handsIcon {
+        left: 49%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .handsIcon {
+        left: 44%;
+    }
+}
+
+.story {
+    margin-bottom: 35px;
+}
+
+
+/* Last Donation button (Kindness is Powerfull) */
+
+
+/* ======================================================================*/
+
+#lastDonateCon {
+    background-color: rgba(0, 0, 0, 0.40);
+    width: 100%;
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+}
+
+.donateTitle {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 1rem;
+}
+
+.registerBtn-2 {
+    border-radius: 28px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    -moz-appearance: none;
+    background: rgba(0, 0, 0, 0) linear-gradient(180deg, #ed1c24, #ed1c24 50%, #c8131a 51%, #c8131a) repeat scroll 0 0;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: 0.6rem 3rem;
+    position: relative;
+    text-align: center;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1rem;
+}
+
+.full-width {
+    max-width: 1920px;
+}
+
+
+/* About page */
+
+
+/* ======================================================================*/
+
+.moreinfo-3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.moreinfo-4 {
+    text-align: center;
+    margin-bottom: -3rem;
+    margin-top: 1rem;
+    font-size: 2em;
+    font-weight: 600;
+    color: #e31d1a;
+}
+
+.donateCon {
+    background-color: #dddddd;
+    width: 100%;
+    text-align: center;
+    padding-top: 6.5rem;
+}
+
+.donateBtn-2 {
+    border-radius: 28px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    -moz-appearance: none;
+    background: #e31d1a;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: 0.6rem 3rem;
+    position: relative;
+    text-align: center;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1.5rem;
+}
+
+.statsInfoCon {
+    width: 100%;
+    margin-top: 7.5rem;
+    text-align: center;
+}
+
+.statsInfoCon-2 {
+    margin-top: 5.5rem;
+    text-align: center;
+    background-color: #f1f1f1;
+    display: table;
+    height: 100px;
+    margin: 100px auto 0rem;
+    width: 100%;
+    padding: 4rem;
+    border-bottom: 2px solid #dddddd;
+}
+
+.statsInfoCon-2 img {
+    width: 35%;
+}
+
+@media only screen and (max-width: 40em) {
+    .statsInfoCon-2 .columns {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .statsInfoCon-2 img {
+        width: 40%;
+    }
+}
+
+
+/* Story of Hope page */
+
+
+/* ====================================================================== */
+
+video {
+    margin: 5rem 3rem;
+}
+
+.shareComCon {
+    width: 100%;
+    text-align: center;
+    padding: 4.5rem 1rem;
+    border-top: 2px solid #dddddd;
+}
+
+.shareComCon p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #e31d1a;
+}
+
+.shareComCon-2 {
+    width: 100%;
+    text-align: center;
+    padding: 4.5rem 1rem;
+}
+
+.shareComCon-2 p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #e31d1a;
+}
+
+.mainHeader {
+    top: 96px;
+    background: #f1f1f1;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 3px solid #e31d1a;
+    max-width: 100%;
+    margin-bottom: 95px;
+}
+
+.mainHeader h2 {
+    color: #313131;
+    font-weight: 600;
+}
+
+.mainHeaderDesc {
+    font-weight: bold;
+}
+
+.subMenus {
+    position: relative;
+}
+
+.tabs {
+    border: none;
+    background: none;
+}
+
+.subMenus ul li a {
+    line-height: 0.5;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    color: #484848;
+    display: block;
+}
+
+.subMenus ul li a:hover {
+    background: #dddddd;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+    .mainHeader {
+        top: 71px;
+        margin-bottom: 71px;
+    }
+}
+
+.socialIcon ul li {
+    vertical-align: middle;
+    display: inline;
+}
+
+.socialIcon ul li a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .footer {
+        background-color: #464646;
+    }
+    #lastDonateCon {
+        background-color: #2c2c2c;
+    }
+}
+
+.footer-links {
+    list-style-type: none;
+}
+
+.footer-links li {
+    margin-top: 0em;
+}
+
+.footer-links li a {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .socialIcon ul {
+        margin-bottom: 10px
+    }
+}
+
+@media screen and (min-width: 90.063em) and (max-width: 120em) {
+    .socialIcon {
+        margin-bottom: 56px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .lastSlogan {
+        margin-top: 1rem;
+    }
+}
+
+.lastSlogan img {
+    margin-bottom: 3rem;
+    width: 44%;
+}
+
+
+/* Donor- Giving Hope */
+
+
+/* ======================================================================*/
+
+.donorCon {
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+.donorSec {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.donorCon h6 {
+    color: #313131;
+    border-left: 3px solid #313131;
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.donorCon p {
+    text-align: left;
+}
+
+#secondSec {
+    background-color: blue;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+#thirdSec {
+    background-color: red;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+#fourthSec {
+    background-color: yellow;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+
+/* Engage More - Introduction */
+
+
+/* ======================================================================*/
+
+.awareCon {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-width: 100%;
+}
+
+.awareCon h2 {
+    color: #313131;
+    font-weight: 600;
+}
+
+.awareCon ol {
+    font-weight: 300;
+}
+
+.engageIcon img {
+    width: 26%;
+}
+
+
+/* Engage More Page - Intorduction with SVG icons */
+
+
+/* ======================================================================*/
+
+.introCon {
+    background: #f1f1f1;
+    width: 100%;
+    padding-top: 3.5rem;
+    text-align: center;
+    padding-bottom: 3.5rem;
+    border-bottom: 2px solid #dddddd;
+}
+
+.svgIconIntro {
+    max-width: 18%;
+    margin-left: 39%;
+    margin-bottom: 10%;
+    margin-top: 13%;
+    display: block;
+}
+
+
+/* Main Footer */
+
+
+/* ======================================================================*/
+
+footer {
+    background-color: rgba(70, 70, 70, 0.5);
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+footer i {
+    color: #fff;
+    font-size: 2em;
+    width: 36px;
+}
+
+footer h6 {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+footer ul {
+    margin-left: 0px;
+}
+
+footer a {
+    font-weight: 300;
+    color: #fff;
+}
+
+.socialIcon {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.socialIcon ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socialIcon ul li {
+    vertical-align: middle;
+    display: inline;
+}
+
+.socialIcon ul li a {
+    margin: 0 5px;
+    list-style: none;
+}
+
+@media screen and (max-width: 39.9375em) {
+    footer {
+        background-color: #464646;
+    }
+    #lastDonateCon {
+        background-color: #2c2c2c;
+    }
+}
+
+.footerBgCon {
+    background-image: url('../images/footer.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 0rem;
+}
+
+.footer-links li {
+    margin-top: 0em;
+}
+
+.footer-links li a .fa {
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .socialIcon ul {
+        margin-bottom: 10px
+    }
+}
+
+.blogBtn {
+    display: inline-block;
+    background-color: #fff;
+    padding: 4px 41px;
+    border-radius: 28px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    position: relative;
+    margin: 0 auto;
+    color: #e31d1a;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+    top: 39px;
+}
+
+.blogBtn:hover {
+    background-color: #e31d1a;
+    color: #fff;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .blogSec {
+        margin-top: -3.7rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 90.063em) and (max-width: 120em) {
+    .blogBtn {
+        top: 56px;
+    }
+}
+
+.copyright {
+    background-color: #e31d1a;
+    position: relative;
+    padding: 0.7rem 3rem 0rem 4rem;
+    margin-top: -50px;
+}
+
+.copyright img {
+    float: left;
+    width: 165px;
+}
+
+.copyright p {
+    font-size: 0.7em;
+    text-align: right;
+    margin-top: .3rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .copyright {
+        padding: 0rem;
+    }
+    .copyright p {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    .copyright img {
+        margin-top: 2.3rem;
+        float: none;
+        width: 50%;
+    }
+}

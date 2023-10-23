@@ -26,22 +26,22 @@ document.onmousemove = function followMe(){
   if (-heightOverage/300 >= Math.abs(overage/300))
   {
     value = 3 - Math.abs(heightOverage/200);
-    frontObj.style.filter = "blur("+-heightOverage/300+"px)";
+    frontObj.style.filter = "blur("+-heightOverage/500+"px)";
     camera.style.filter = "blur("+value+"px)";
-    console.log(1 + Math.abs(-heightOverage/300));
+    //console.log(1 + Math.abs(-heightOverage/300));
     //console.log("Vert Priority");
   }
   else
   {
     value2 = 3 - Math.abs(overage/200);
     value3 = 3 - Math.abs(-overage/200);
-    frontObj.style.filter = "blur("+overage/300+"px)";
-    frontObj.style.filter = "blur("+-overage/300+"px)";
+    frontObj.style.filter = "blur("+overage/500+"px)";
+    frontObj.style.filter = "blur("+-overage/500+"px)";
     camera.style.filter = "blur("+value2+"px)";
     camera.style.filter = "blur("+value3+"px)";
     //console.log("Hor Priority");
   }
-  console.log(camera.style.filter);
+  //console.log(camera.style.filter);
 
   if(overage <= 0)
   {

@@ -3,6 +3,7 @@
 @font-face {
   font-family: truelies;
   src: url('../assets/fonts/truelies.ttf');
+  font-display: swap;
 }
 
 * {
@@ -525,15 +526,35 @@ box-shadow: 0px 0px 39px 10px rgba(12, 12, 12, 0.65);
 
 #Page2
 {
-  overflow: hidden;
-  height: calc(100vh + 50px);
   width: 100vw;
+  height:135vh;
   display: flex;
   justify-content: center;
-  background-color: #000003;
+  background-color: #191919;
 }
 
 #bgBox
+{
+display: inline-flex;
+height:auto;
+transition: all 1s;
+position: absolute;
+z-index: 20;
+height: 130vh;
+}
+
+@media screen and (min-width: 1000px) {
+  #Page2
+  {
+    overflow: hidden;
+    height: calc(100vh + 50px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #191919;
+    padding-bottom:0;
+  }
+  #bgBox
 {
 display: inline-flex;
 transition: all 1s;
@@ -541,6 +562,7 @@ position: absolute;
 z-index: 20;
 overflow-y:hidden;
 height: calc(100vh + 50px);
+}
 }
 
 .fullBody
@@ -678,6 +700,7 @@ filter: brightness(0.4);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #aboutDev
@@ -695,11 +718,9 @@ filter: brightness(0.4);
 {
   display: flex;
   flex-direction: column;
-  width: 90vw;
+  width: 80vw;
   padding-bottom: 60px;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+
 }
 
 .desBottom
@@ -707,14 +728,26 @@ filter: brightness(0.4);
   width: 100%;
 }
 
-#devBottom ul li
+#devBottom, #designBottom
 {
-  background-size: 100%;
+  visibility: hidden;
+}
+
+#designBottom ul
+{
+  width: 500%;
+  background-color: #191919;
+}
+
+#designBottom ul li, #devBottom ul li
+{
+  background-size: contain;
 }
 
 #devBottom ul
 {
   background-color: #191919;
+  width: 500%;
 }
 
 .frosted
@@ -735,7 +768,7 @@ filter: brightness(0.4);
 
 .desTop h1
 {
-  color: #383C40;
+  color: #2B2B2B;
   font-size: 4em;
   margin-top: 40px;
 }
@@ -743,7 +776,7 @@ filter: brightness(0.4);
 
 .desTop p
 {
-    color: #383C40;
+    color: #2B2B2B;
     height: 100%;
 }
 
@@ -757,8 +790,8 @@ filter: brightness(0.4);
 
 .desBottom ul li
 {
-  width:20vw;
-  height:30vh;
+  width:100vw;
+  height:40vh;
   position: relative;
   background-position: center;
   background-size: cover;
@@ -797,6 +830,10 @@ filter: brightness(0.4);
 
 @media screen and (min-width: 1000px)
 {
+  #devBottom, #designBottom
+{
+  display: flex;
+}
 
   .desTop h1
   {
@@ -805,12 +842,35 @@ filter: brightness(0.4);
   .desTop
   {
       width: 55%;
+      height: 100%;
   }
+
+  #designBottom ul
+{
+  width: 100%;
+}
+
+.devBottom
+{
+  width: 100%;
+}
+
+  .desBottom
+{
+  width: 100%;
+}
+
+#designBottom ul li, #devBottom ul li
+{
+  background-size: 100%;
+}
+
   .desBottom ul li
   {
     width:20vw;
     height:12vw;
     background-position: top;
+    background-size: 100%;
   }
   .desBottom ul li:hover
   {
@@ -827,7 +887,6 @@ filter: brightness(0.4);
 
 #swipeWrap
 {
-  position: absolute;
   width: 100%;
   height: 0px;
   overflow-y: hidden;
@@ -919,8 +978,8 @@ transition: all 0.3s;
 
 #aboutP
 {
-  width: 90vw;
-  max-width: 90vw;
+  width: 80vw;
+  max-width: 500px;
   color: #fffff3;
   text-align: center;
   margin: 0 auto;
@@ -982,7 +1041,7 @@ margin: 0 auto;
 #Page3
 {
   background-color: black;
-  height: calc(100vh + 50px);
+  height: 150%;
   width: 100vw;
 }
 
@@ -991,7 +1050,45 @@ margin: 0 auto;
   width: 100%;
   position: relative;
   z-index: 30;
+  height: 150%;
+}
+
+.mySlides
+{
+  opacity: 0;
+    position: absolute;
+    top:0;
+    height: 130vh;
+    margin: auto;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 800px)
+{
+  #Page3
+  {
+    height: calc(100vh + 50px);
+  }
+  #projects
+{
+  width: 100%;
+  position: relative;
+  z-index: 30;
   height: 100%;
+}
+.mySlides
+{
+  opacity: 0;
+    position: absolute;
+    top:0;
+    height: 100vh;
+    margin: auto;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
+    overflow: hidden;
+}
 }
 
 #galleryWrap
@@ -1037,20 +1134,10 @@ margin: 0 auto;
 
 .slideImage4
 {
-  background-image: url('../images/anomolyPreview.webp');
+  background-image: url('../images/ventiriPreview.webp');
 }
 
-.mySlides
-{
-  opacity: 0;
-    position: absolute;
-    top:0;
-    height: 100vh;
-    margin: auto;
-    z-index: 100;
-    transition: transform .5s, opacity .5s, z-index .5s;
-    overflow: hidden;
-}
+
 .mySlides.initial,
 .mySlides.active {
   opacity: 1;
@@ -1167,9 +1254,10 @@ margin: 0 auto;
   font-size: 15px;
   position: absolute;
   z-index: 5000;
+  opacity: 0.95;
   background-color: #000003;
   width: 100vw;
-  height: 60%;
+  height: 80%;
   top:40%;
   padding: 0px 0px;
   padding-left: 0px;
@@ -1178,7 +1266,7 @@ margin: 0 auto;
   transition: all 0.3s;
   align-items: center;
   justify-content: center;
-  overflow-y: scroll;
+  overflow-y: visible;
 }
 
 
@@ -1189,12 +1277,15 @@ margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   align-self: flex-start;
+  text-align: center;
 }
 
-.leftWrap h4
+.codeType
 {
     margin-top: 50px;
     margin-bottom: 10px;
+    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .leftWrap h2
@@ -1227,12 +1318,14 @@ margin: 0 auto;
     padding-right: 60px;
     left: 0;
     top: 0;
+    overflow-y: scroll;
   }
   .leftWrap
   {
     width: 320px;
     padding-left: 0;
     padding-right: 0;
+    text-align: left;
   }
   .leftWrap p
   {
@@ -1430,16 +1523,16 @@ margin: 0 auto;
 
 .p4display1 div
 {
-  background-image: url('../images/displays/AN1.webp');
+  background-image: url('../images/displays/VT1.webp');
 }
 
 .p4display2 div
 {
-  background-image: url('../images/displays/AN2.webp');
+  background-image: url('../images/displays/VT2.webp');
 }
 .p4display3 div
 {
-  background-image: url('../images/displays/AN3.webp');
+  background-image: url('../images/displays/VT3.webp');
 }
 
 .displayBox div
@@ -1526,6 +1619,7 @@ margin: 0 auto;
 #contGold
 {
   width: 70%;
+  aspect-ratio: 12 / 1;
   height: auto;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -1685,7 +1779,17 @@ input:-webkit-autofill:focus {
 {
   font-size: 13px;
   color: #FFFFF3;
+  text-align: center;
 }
+
+@media screen and (min-width: 800px)
+{
+  #contactInfo
+  {
+    text-align: left;
+  }
+}
+
 @media (min-width: 1295px) {
   #contactContainer
   {
@@ -1785,7 +1889,6 @@ input:-webkit-autofill:focus {
 {
   width: 100%;
   height: auto;
-  padding-top: 20px;
   margin-bottom: 10px;
   display: flex;
   margin: 0;

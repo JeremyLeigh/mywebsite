@@ -1,0 +1,6 @@
+[10-May-2022 02:07:16 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/phpscripts/connect.php on line 9
+[10-May-2022 02:07:26 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/phpscripts/connect.php on line 9
+[10-May-2022 02:10:17 UTC] PHP Parse error:  syntax error, unexpected 'N' (T_STRING) in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/phpscripts/connect.php on line 4
+[10-May-2022 02:11:32 UTC] PHP Parse error:  syntax error, unexpected 'Defaultjal1' (T_STRING) in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/phpscripts/connect.php on line 4
+[10-May-2022 02:11:45 UTC] PHP Parse error:  syntax error, unexpected '$pass' (T_VARIABLE) in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/phpscripts/connect.php on line 4
+[10-May-2022 02:12:03 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'u645609075_jeremyleigh2'@'localhost' to database 'db_organ' in /home/u645609075/domains/jeremyleigh.xyz/public_html/something/admin/phpscripts/connect.php on line 9
