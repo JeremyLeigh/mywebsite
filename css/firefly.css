@@ -1,7 +1,10 @@
-
+#fireSection
+{
+  position: relative;
+}
 
 .firefly {
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 50%;
   width: 0.2vw;

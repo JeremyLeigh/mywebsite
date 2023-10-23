@@ -20,22 +20,28 @@ document.onmousemove = function followMe(){
   //console.log(currentSlide);
   aboutBg.style.transform = "rotateY("+overage/300+"deg) rotateX("+-heightOverage/300+"deg) translateY("+-heightOverage/100+"px) translateX("+overage/100+"px) scale("+scaleValue+")";
   currentSlide.style.transform = "translateY("+-heightOverage/300+"px) translateX("+overage/300+"px)";
-
   camera.style.transform = "rotateY("+overage/300+"deg) rotateX("+-heightOverage/300+"deg) translateY("+-heightOverage/100+"px) translateX("+overage/100+"px)";
   frontObj.style.transform = "rotateY("+overage/5000+"deg) translateY("+-heightOverage/200+"px) translateX("+overage/200+"px)";
   //console.log("overage is: "+-overage/300+" heightOverage is :"+-heightOverage/300);
   if (-heightOverage/300 >= Math.abs(overage/300))
   {
+    value = 3 - Math.abs(heightOverage/200);
     frontObj.style.filter = "blur("+-heightOverage/300+"px)";
+    camera.style.filter = "blur("+value+"px)";
+    console.log(1 + Math.abs(-heightOverage/300));
     //console.log("Vert Priority");
   }
   else
   {
-        frontObj.style.filter = "blur("+overage/300+"px)";
+    value2 = 3 - Math.abs(overage/200);
+    value3 = 3 - Math.abs(-overage/200);
+    frontObj.style.filter = "blur("+overage/300+"px)";
     frontObj.style.filter = "blur("+-overage/300+"px)";
+    camera.style.filter = "blur("+value2+"px)";
+    camera.style.filter = "blur("+value3+"px)";
     //console.log("Hor Priority");
   }
-
+  console.log(camera.style.filter);
 
   if(overage <= 0)
   {

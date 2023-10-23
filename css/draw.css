@@ -5,7 +5,9 @@
   -webkit-mask-image: url("../images/masks/text.webp");
   mask-image: url("../images/masks/text.webp");
   stroke-dasharray: 15712.3583984375;
-  transform: translateY(30px);
+  /*transform: translateY(-100px);*/
+  transform:translateY(-30px) scale(0.6);
+  position: absolute;
 }
 
 #text2{
@@ -14,7 +16,9 @@
   -webkit-mask-image: url("../images/masks/text2.webp");
   mask-image: url("../images/masks/text2.webp");
   stroke-dasharray: 26139.798828125;
-  transform: translateY(-20px);
+  /*transform: translateY(100px);*/
+  transform: translateY(90px) scale(0.6);
+  position: absolute;
 }
 
 .ready1
@@ -59,11 +63,64 @@
 
 #aniTextWrap
 {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 550px) {
+
+#text
+{
+  transform:translateY(-20px) scale(1);
+
+}
+
+#text2
+{
+  transform: translateY(180px) scale(1);
+}
+}
+
+@media screen and (min-width: 800px) {
+
+#text
+{
+  transform:translateY(-50px) scale(1.4);
+
+}
+
+#text2
+{
+  transform: translateY(200px) scale(1.4);
+}
+}
+
+@media screen and (min-width: 1200px) {
+#text
+{
+  transform: translateX(-23vw) translateY(-40px) scale(0.8);
+
+}
+
+#text2
+{
+  transform: translateX(27vw) translateY(-40px) scale(0.8);
+}
+}
+
+@media screen and (min-width: 1600px) {
+#text
+{
+  transform: translateX(-19vw) translateY(-40px);
+}
+
+#text2
+{
+  transform: translateX(22vw) translateY(-40px);
+}
+}
+
 
 @keyframes scaleIn
 {
